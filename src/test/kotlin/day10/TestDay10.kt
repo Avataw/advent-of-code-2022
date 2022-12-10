@@ -11,7 +11,7 @@ class TestDay10 {
         val input = readTestInput(10)
 
         val solution = solveA(input)
-        assertEquals(1054310, solution)
+        assertEquals(13140, solution)
     }
 
     @Test
@@ -19,22 +19,40 @@ class TestDay10 {
         val input = readInput(10)
 
         val solution = solveA(input)
-        assertEquals(1641031010, solution)
+        assertEquals(16880, solution)
     }
 
     @Test
     fun `should work with b for the given test input`() {
         val input = readTestInput(10)
 
-        val solution = solveB(input)
-        assertEquals(241033642, solution)
+        val solution = "\n" + solveB(input)
+        assertEquals(
+            """
+##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......#######.....
+""", solution
+        )
     }
 
     @Test
     fun `should work with b for the actual input`() {
         val input = readInput(10)
 
-        val solution = solveB(input)
-        assertEquals(11015525, solution)
+        val solution = "\n" + solveB(input)
+        assertEquals(
+            """
+###..#..#..##..####..##....##.###..###..
+#..#.#.#..#..#....#.#..#....#.#..#.#..#.
+#..#.##...#..#...#..#..#....#.###..#..#.
+###..#.#..####..#...####....#.#..#.###..
+#.#..#.#..#..#.#....#..#.#..#.#..#.#.#..
+#..#.#..#.#..#.####.#..#..##..###..#..#.
+""", solution
+        )
     }
 }
