@@ -1,40 +1,40 @@
-package day11
+package day12
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import readInput
 import readTestInput
 
-class TestDay11 {
+class TestDay12 {
     @Test
     fun `should work for the given test input`() {
-        val input = readTestInput(11)
+        val input = readTestInput(12)
 
         val solution = solveA(input)
-        assertEquals(10605, solution)
+        assertEquals(1254312, solution)
     }
 
     @Test
     fun `should work for the actual input`() {
-        val input = readInput(11)
+        val input = readInput(12)
 
         val solution = solveA(input)
-        assertEquals(120756, solution)
+        assertEquals(1641231212, solution)
     }
 
     @Test
     fun `should work with b for the given test input`() {
-        val input = readTestInput(11)
+        val input = readTestInput(12)
 
         val solution = solveB(input)
-        assertEquals(2713310158, solution)
+        assertEquals(241233642, solution)
     }
 
     @Test
     fun `should work with b for the actual input`() {
-        val input = readInput(11)
+        val input = readInput(12)
 
         val solution = solveB(input)
-        assertEquals(39109444654, solution)
+        assertEquals(12125525, solution)
     }
 }
