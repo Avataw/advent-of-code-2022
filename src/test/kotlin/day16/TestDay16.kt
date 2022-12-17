@@ -11,7 +11,7 @@ class TestDay16 {
         val input = readTestInput(16)
 
         val solution = solveA(input)
-        assertEquals(1654316, solution)
+        assertEquals(1651, solution)
     }
 
     @Test
@@ -19,7 +19,7 @@ class TestDay16 {
         val input = readInput(16)
 
         val solution = solveA(input)
-        assertEquals(1641631616, solution)
+        assertEquals(2119, solution)
     }
 
     @Test
@@ -27,7 +27,7 @@ class TestDay16 {
         val input = readTestInput(16)
 
         val solution = solveB(input)
-        assertEquals(241633642, solution)
+        assertEquals(1707, solution)
     }
 
     @Test
@@ -35,6 +35,6 @@ class TestDay16 {
         val input = readInput(16)
 
         val solution = solveB(input)
-        assertEquals(16165525, solution)
+        assertEquals(2615, solution)
     }
 }
